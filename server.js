@@ -1,5 +1,3 @@
-require("dotenv").config();
-
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -7,7 +5,7 @@ function sleep(ms) {
 async function main() {
   while (true) {
     console.log("Microservices rock!");
-    console.log("TEST_VARIABLE value: ", process.env.TEST_VARIABLE);
+    console.log("THE_MESSAGE value: ", process.env.THE_MESSAGE);
     await sleep(5000);
   }
 }
