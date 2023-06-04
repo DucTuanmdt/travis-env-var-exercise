@@ -1,6 +1,10 @@
 # Use NodeJS base image
 FROM node:13
 
+# Set env variabe from build command
+ARG TEST_VARIABLE
+ENV THE_MESSAGE=$TEST_VARIABLE
+
 # Create app directory
 WORKDIR /usr/src/app
 

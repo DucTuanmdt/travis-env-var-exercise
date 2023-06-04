@@ -5,7 +5,7 @@ function sleep(ms) {
 async function main() {
   while (true) {
     console.log("Microservices rock!");
-    console.log("Value of env variable: ", process.env.TEST_VARIABLE);
+    console.log("THE_MESSAGE value: ", process.env.THE_MESSAGE);
     await sleep(5000);
   }
 }
