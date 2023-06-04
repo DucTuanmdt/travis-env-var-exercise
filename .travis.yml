@@ -5,6 +5,10 @@ node_js:
 services:
   - docker
 
+env:
+  global:
+    - TEST_VARIABLE="$TEST_VARIABLE"
+
 # Pre-testing installs
 install:
   - echo "nothing needs to be installed"
